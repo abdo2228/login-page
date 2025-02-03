@@ -1,40 +1,91 @@
-body{
+*{
+    font-family: "Griffy", serif;
+    margin: 0;
+    padding: 0;
+}
+.form{
+    background:linear-gradient( rgba(8, 8, 8, 0.522), rgba(1, 1, 1, 0.741), rgba(0, 0, 0, 0.826), rgba(0,0,0,0.1)),url(https://www.cbc.ca/natureofthings/content/legacy/BeAfraid_HauntedHouse_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1000px;
-    height: 400px;
-
 }
-
-    
-    
-    
-     
-    body{
-        top: 100px;
-        margin: 30px;
-        border: 10px;
-        background: linear-gradient(90deg, rgba(3,255,28,1) 0%, rgba(61,27,255,1) 0%, rgba(255,0,0,1) 100%);
-        
-
-    }
-   span{
-    color: rgb(5, 252, 17);
+form{
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 450px;
+   border: 2px solid;
+   padding: 20px 20px;
 }
-  form{
-    padding: 40px;
+.Full-name-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Full-name-group input{
+    outline: none;
+    border: 2px solid rgb(109, 2, 176);
+    box-shadow: 0 0 10px 2px rgba(109, 2, 176, 0.384);
+    width: 250px;
+    padding: 10px 15px;
     border-radius: 30px;
-    box-shadow: 0 0 30px rgb(49, 48, 48);
 }
+.Full-name-group label{
+    margin-left: 15px;
+    color: white;
+    letter-spacing: 1px;
+}
+.gmail-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.gmail-group input{
+    box-shadow: 0 0 10px 2px rgba(109, 2, 176, 0.384);
+    outline: none;
+    border: 2px solid rgb(109, 2, 176);
+    width: 250px;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+.gmail-group label{
+    margin-left: 15px;
+    color: white;
+    letter-spacing: 1px;
+}
+textarea{
+    outline: none;
+    border: 2px solid rgb(109, 2, 176);
+    width: 250px;
+    padding: 10px 10px 50px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 2px rgba(109, 2, 176, 0.384);
 
-   a{
-    color: black;
-    text-decoration: none;
-    font-family: PT Sans Narrow;
-    font-size: large;
 }
-h1{
-    font-family: Jost;
+.button{
+    width: 200px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 2px solid rgb(109, 2, 176);
+    color:rgb(109, 2, 176) ;
+    font-size: 22px;
+    letter-spacing: 1px;
+     font-weight: 600;
+     box-shadow: 0 0 5px 1px white;
+     transition: all 0.3s ;
+}
+.button:hover{
+    background-color:rgb(109, 2, 176) ;
+    color: white;
+    border: 2px solid white;
 }
